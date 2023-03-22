@@ -1,7 +1,7 @@
 <?php
   $host = "localhost";
   $port = "3306";
-  $dbname = "gnomesAway";
+  $dbname = "gnomesaway";
   $user = "root";
   $password = "";
 

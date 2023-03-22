@@ -40,7 +40,8 @@
   //  $result=$statement->fetchAll();
   //  if($result){
   //    foreach($result as $row){
-  //      echo $row["username"]." | ".$row["password"]." | ".$row["email"]." | ".$row["name"]." | ".$row["surname"]. " | ".$row["address"]."<br>";
+  //      echo $row["username"]." | ".$row["password"]." | ".$row["name"]." | ".$row["surname"]. " | ".$row["address"]."<br>";
   //    }
   //  }
+  
 ?>
