@@ -5,13 +5,13 @@
       <p class="logo--name">GnomeAway</p>
     </div>
     <ul class="navigation--list">
-      <li><a class="navigation--item link" href="#">Home</a></li>
-      <li><a class="navigation--item link" href="#">About us</a></li>
-      <li><a class="navigation--item link" href="#">Store</a></li>
-      <li><a class="navigation--item link" href="#">Contact us</a></li>
+      <li><a class="navigation--item link" href="index.php?page=home">Home</a></li>
+      <li><a class="navigation--item link" href="index.php?page=aboutus">About us</a></li>
+      <li><a class="navigation--item link" href="index.php?page=store">Store</a></li>
+      <li><a class="navigation--item link" href="index.php?page=contactus">Contact us</a></li>
     </ul>
     <div class="btn">
-      <a href="#" class="action--btn link">Get started</a>
+      <a href="index.php?page=login" class="action--btn link">Get started</a>
     </div>
   </nav>
   <div class="line sm-container"></div>
@@ -23,8 +23,8 @@
       </div>
 
       <div class="btns">
-        <a href="#" class="cta--btn">Start journey</a>
-        <a href="#" class="shop--btn">View shop</a>
+        <a href="index.php?page=registration" class="cta--btn">Start journey</a>
+        <a href="index.php?page=store" class="shop--btn">View shop</a>
       </div>
       <div class="hero-testimonials">
         <div class="customers">
