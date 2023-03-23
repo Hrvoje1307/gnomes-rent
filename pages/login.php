@@ -25,7 +25,7 @@
             foreach($result as $row){
                 if($username==$row["username"] && password_verify($password, $row["password"])){
                     $_SESSION["username"]=$row["username"];
-                    echo"Uspjesna prijava";
+                    echo"Uspjesna prijava".$row["username"];
                 }else {
                     echo"Neuspjesna prijava";
                 }

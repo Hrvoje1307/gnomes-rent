@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 21, 2023 at 11:46 PM
+-- Generation Time: Mar 23, 2023 at 03:03 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -29,11 +29,21 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `gnomes` (
   `id` int(11) NOT NULL,
+  `action` varchar(50) NOT NULL,
   `price` int(11) NOT NULL,
   `description` varchar(200) NOT NULL,
   `name` varchar(50) NOT NULL,
   `image` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `gnomes`
+--
+
+INSERT INTO `gnomes` (`id`, `action`, `price`, `description`, `name`, `image`) VALUES
+(2, 'bravey', 60, 'This is Bravey', 'Bravey', './images/gnomes/gnomeBravey.jpg'),
+(3, 'peaky', 70, 'This is Peaky', 'Peaky', './images/gnomes/gnomePeaky.jpg'),
+(4, 'worky', 50, 'This is Worky', 'Worky', './images/gnomes/gnomeWorky.jpg');
 
 -- --------------------------------------------------------
 
@@ -101,7 +111,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `gnomes`
 --
 ALTER TABLE `gnomes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Constraints for dumped tables

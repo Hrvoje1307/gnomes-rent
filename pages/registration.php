@@ -22,7 +22,7 @@
 </section>
 
 <?php
-  $pdo= require_once("./db/connect.php");
+  // $pdo= require_once("./db/connect.php");
   if(isset($_POST["registrationAction"])){
     $username=$_POST['registrationUsername'];
     $password=password_hash($_POST['registrationPassword'],PASSWORD_BCRYPT);
