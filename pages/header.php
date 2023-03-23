@@ -12,6 +12,7 @@
     </ul>
     <div class="btn">
       <a href="index.php?page=login" class="action--btn link">Get started</a>
+      <a href="index.php?page=cart" class="action--btn link">Cart</a>
     </div>
   </nav>
   <div class="line sm-container"></div>
