@@ -11,7 +11,7 @@
     <input type="text" class="form-input" name="addressChange" id="address" placeholder="address">
     <input type="submit" value="Change" class="form-btn action--form" name="change">
     <input type="submit" value="Delete" class="form-btn delete--user" name="delete">
-    <input type="submit" value="Delete" class="form-btn delete--user" name="logout">
+    <input type="submit" value="Logout" class="form-btn delete--user" name="logout">
   </form> 
 </section>
 
