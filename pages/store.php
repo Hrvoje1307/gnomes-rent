@@ -11,7 +11,7 @@
               <img class="imageProduct" src="'. $row["image"] .'"><br>
               <span class="nameProduct"><b>'. $row["name"].'</b></span> <br>
               <span class="priceProduct">'. $row["price"] .' €</span> <br><br>
-              <button class="btnProduct" name="addToCard"  onclick="addToCart('.$row["id"].',`'.$row["name"].'`)">Add to Cart</button>
+              <button class="btnProduct" name="addToCard" onclick="addToCart('.$row["id"].',`'.$row["name"].'`)">Add to Cart</button>
             </section>';
           }
         }

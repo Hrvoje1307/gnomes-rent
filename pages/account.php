@@ -54,17 +54,6 @@
     die(header("Location:index.php?page=registration"));
   }
 
-  if(isset($_POST["order"])){
-    $sql="SELECT * FROM users";
-   $statement=$pdo->query($sql);
-   $result=$statement->fetchAll();
-   if($result){
-     foreach($result as $row){
-       echo $row["username"]." | ".$row["password"]." | ".$row["name"]." | ".$row["surname"]. " | ".$row["address"]."<br>";
-     }
-   }
-  }
-
   if(isset($_POST["logout"])){
     unset($_SESSION["username"]);
     die(header("Location:index.php?page=home"));
