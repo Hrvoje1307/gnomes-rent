@@ -17,7 +17,10 @@
         <label class="form-label" for="address">Address</label>
         <input class="form-input" name="registrationAddress" type="text" placeholder="address" id="address">
 
-        <input type="submit" value="Log in" class="action--form" name="registrationAction">
+        <div class="btns--form">
+          <input type="submit" value="Sign up" class="form-btn action--form" name="registrationAction">
+          <input type="submit" value="Have account?" class="form-btn action--form" name="switchAccount">
+        </div>
     </form>
 </section>
 
@@ -33,6 +36,12 @@
     $sql="INSERT INTO users (username,name,surname,password,address,timestamp) VALUES (?,?,?,?,?,NOW())";
     $s=$pdo->prepare($sql);
     $s->execute(["$username","$name","$surname","$password","$address"]);
+    die(header("Location:index.php?page=login"));
+
+  }
+
+  if(isset($_POST["switchAccount"])){
+    die(header("Location:index.php?page=login"));
   }
 
   // $sql="SELECT * FROM users";

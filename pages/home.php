@@ -42,7 +42,7 @@
 
 <section class="about-us container justify--center">
   <p class="subheading">Who are we</p>
-  <h1 class="secondary-heading">Get in tuch with us</h1>
+  <h1 class="secondary-heading">Get in touch with us</h1>
   <div class="about-us-text">
     <p class="about-us-paragraph">
     Welcome to Gnome Rent, your one-stop-shop for renting garden gnomes! We specialize in providing high-quality, adorable garden gnomes for rent to add a touch of whimsy and fun to your outdoor space. Our collection features gnomes of all shapes, sizes, and styles, including classic gnomes with pointed hats and long beards, as well as more modern and unique designs. With our flexible rental periods and affordable prices, you can easily create a fun and playful garden without having to commit to purchasing expensive decorations. Our gnomes are perfect for everything from outdoor parties and events to daily garden decor. Contact us today to learn more about our rental options and start adding some gnome magic to your garden!
@@ -53,26 +53,26 @@
 <section class="testimonials--gallery">
   <aside class="testimonials">
     <p class="subheading">testimonials</p>
-    <h1 class="secondary-heading">What other say about us</h1>
+    <h1 class="secondary-heading">What others say about us</h1>
     <div class="reviews">
       <article class="customer customer--01">
-        <img class="customer-image" src="./images/customers/customer01.jpg" alt="First customer">
         <p class="review">GnomeAway was fantastic! The rental process was easy and the gnomes were adorable. I highly recommend them for any outdoor event.</p>
+        <img class="customer-image" src="./images/customers/customer01.jpg" alt="First customer">
         <p class="customer-name">&#8212;A. Hanson</p>
         </article>
         <article class="customer customer--02">
-        <img class="customer-image" src="./images/customers/customer02.jpg" alt="Second customer">
-        <p class="review">I rented a gnome from GnomeAway and it was the perfect addition to my garden. The gnome was high-quality and looked great. </p>
-        <p class="customer-name">&#8212;K. Montgomery</p>
+          <p class="review">I rented a gnome from GnomeAway and it was the perfect addition to my garden. The gnome was high-quality and looked great. </p>
+          <img class="customer-image" src="./images/customers/customer02.jpg" alt="Second customer">
+          <p class="customer-name">&#8212;K. Montgomery</p>
         </article>
       <article class="customer customer--03">
+        <p class="review">GnomeAway made my daughter's garden-themed birthday party a huge success. The gnomes were so cute and the rental process was a breeze.</p>
         <img class="customer-image" src="./images/customers/customer03.jpg" alt="Third customer">
-        <p class="review">GnomeAway made my daughter's garden-themed birthday party a huge success. The gnomes were so cute and the rental process was a breeze.I will definitely rent from them again!</p>
         <p class="customer-name">&#8212;T. Porter</p>
       </article>
       <article class="customer customer--04">
+        <p class="review">I was hesitant to rent garden gnomes at first, but GnomeAway exceeded my expectations. The gnomes were adorable and the rental process was easy.</p>
         <img class="customer-image" src="./images/customers/customer04.jpg" alt="Fourth customer">
-        <p class="review">I was hesitant to rent garden gnomes at first, but GnomeAway exceeded my expectations. The gnomes were adorable and the rental process was easy and hassle-free.</p>
         <p class="customer-name">&#8212;E. Sullivan</p>
       </article>
     </div>
@@ -104,6 +104,9 @@
     </div>
     <div class="gallery--img--container">
       <img class="gallery--img img--09" src="./images/gnomes/gnomeBeeny.jpg" alt="First photo in gallery">
+    </div>
+    <div class="gallery--img--container">
+      <img class="gallery--img img--10" src="./images/gnomes/gnomeBiden.jpg" alt="First photo in gallery">
     </div>
   </aside>
 </section>

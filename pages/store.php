@@ -1,3 +1,4 @@
+<h1 class="secondary-heading container">Our gnomes</h1>
 <section class="store container">
   <?php
         //$pdo=require_once("./php/connect.php");

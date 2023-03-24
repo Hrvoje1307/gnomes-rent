@@ -11,8 +11,16 @@
       <li><a class="navigation--item link" href="index.php?page=contactus">Contact us</a></li>
     </ul>
     <div class="btn">
-      <a href="index.php?page=login" class="action--btn link">Get started</a>
-      <a href="index.php?page=cart" class="action--btn link">Cart</a>
+      <?php
+        if(isset($_SESSION["username"])){
+          echo "
+          <a href='index.php?page=account' class='link loggedin'>".$_SESSION['username']." 	&#9656;</a>
+          <a href='index.php?page=cart' class='action--btn link'>Cart</a>";
+        }else {
+          echo "<a href='index.php?page=login' class='action--btn link'>Get started</a>";
+        }
+      ?>
+      
     </div>
   </nav>
   <div class="line sm-container"></div>

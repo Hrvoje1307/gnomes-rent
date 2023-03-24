@@ -8,7 +8,10 @@
         <label class="form-label" for="password">Password</label>
         <input class="form-input" name="loginPassword" type="password" placeholder="*****" id="password">
 
-        <input type="submit" value="Log in" name="loginAction" class="action--form">
+        <div class="btns--form">
+          <input type="submit" value="Log in" class="form-btn action--form" name="loginAction">
+          <input type="submit" value="Don't have account?" class="form-btn action--form" name="switchAccount">
+        </div>
     </form>
 </section>
 
@@ -25,7 +28,8 @@
             foreach($result as $row){
                 if($username==$row["username"] && password_verify($password, $row["password"])){
                     $_SESSION["username"]=$row["username"];
-                    echo"Uspjesna prijava".$row["username"];
+                    // echo"Uspjesna prijava".$row["username"];
+                    die(header("Location:index.php?page=home"));
                 }else {
                     echo"Neuspjesna prijava";
                 }
@@ -33,4 +37,8 @@
         }
 
     }
+
+    if(isset($_POST["switchAccount"])){
+        die(header("Location:index.php?page=registration"));
+      }
 ?>
