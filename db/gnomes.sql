@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 24, 2023 at 02:25 AM
+-- Generation Time: Mar 24, 2023 at 02:40 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -80,14 +80,6 @@ CREATE TABLE `users` (
   `address` varchar(50) NOT NULL,
   `timestamp` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`username`, `name`, `surname`, `password`, `address`, `timestamp`) VALUES
-('Cucko', 'Hrvoje', 'Cuckovic', '$2y$10$nPP1fuJ4fPSJjrls3KofM.2BoSfoPP0Iacx/62/cuzcIlEI4EZ8Ji', 'Malesnica 45', '2023-03-21 19:48:55'),
-('nina', 'Nina', 'Sindik', '$2y$10$5MLK8i8GGKUovvNHQ89ew.chPOgaU7j4UrI6049mvzCNTROUStsv6', 'Jelenovac 45', '2023-03-24 00:21:36');
 
 --
 -- Indexes for dumped tables
