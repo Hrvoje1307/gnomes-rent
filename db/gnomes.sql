@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 23, 2023 at 03:03 PM
+-- Generation Time: Mar 24, 2023 at 02:25 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -43,7 +43,14 @@ CREATE TABLE `gnomes` (
 INSERT INTO `gnomes` (`id`, `action`, `price`, `description`, `name`, `image`) VALUES
 (2, 'bravey', 60, 'This is Bravey', 'Bravey', './images/gnomes/gnomeBravey.jpg'),
 (3, 'peaky', 70, 'This is Peaky', 'Peaky', './images/gnomes/gnomePeaky.jpg'),
-(4, 'worky', 50, 'This is Worky', 'Worky', './images/gnomes/gnomeWorky.jpg');
+(4, 'worky', 50, 'This is Worky', 'Worky', './images/gnomes/gnomeWorky.jpg'),
+(5, 'beeny', 100, 'This is Beeny', 'Beeny', './images/gnomes/gnomeBeeny.jpg'),
+(6, 'Biden', 210, 'Biden', 'Biden', './images/gnomes/gnomeBiden.jpg'),
+(7, 'Handy', 50, 'Handy', 'Handy', './images/gnomes/gnomeHandy.jpg'),
+(8, 'Happy', 85, 'Happy', 'Happy', './images/gnomes/gnomeHappy.jpg'),
+(9, 'nighty', 50, 'Nighty', 'Nighty', './images/gnomes/gnomeNighty.jpg'),
+(10, 'Pooly', 100, 'Pooly', 'Pooly', './images/gnomes/gnomePooly.jpg'),
+(11, 'Stormy', 65, 'Stormy', 'Stormy', './images/gnomes/gnomeStormy.jpg');
 
 -- --------------------------------------------------------
 
@@ -53,6 +60,7 @@ INSERT INTO `gnomes` (`id`, `action`, `price`, `description`, `name`, `image`) V
 
 CREATE TABLE `orders` (
   `id` int(11) NOT NULL,
+  `order_num` int(11) NOT NULL,
   `username` varchar(50) NOT NULL,
   `id_gnome` int(11) NOT NULL,
   `timestamp` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
@@ -78,7 +86,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`username`, `name`, `surname`, `password`, `address`, `timestamp`) VALUES
-('Cucko', 'Hrvoje', 'Cuckovic', '$2y$10$nPP1fuJ4fPSJjrls3KofM.2BoSfoPP0Iacx/62/cuzcIlEI4EZ8Ji', 'Malesnica 45', '2023-03-21 19:48:55');
+('Cucko', 'Hrvoje', 'Cuckovic', '$2y$10$nPP1fuJ4fPSJjrls3KofM.2BoSfoPP0Iacx/62/cuzcIlEI4EZ8Ji', 'Malesnica 45', '2023-03-21 19:48:55'),
+('nina', 'Nina', 'Sindik', '$2y$10$5MLK8i8GGKUovvNHQ89ew.chPOgaU7j4UrI6049mvzCNTROUStsv6', 'Jelenovac 45', '2023-03-24 00:21:36');
 
 --
 -- Indexes for dumped tables
@@ -111,7 +120,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `gnomes`
 --
 ALTER TABLE `gnomes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- Constraints for dumped tables
