@@ -14,11 +14,11 @@
       <?php
         if(isset($_SESSION["username"])){
           echo "
-          <a href='index.php?page=account' class='link loggedin'>".$_SESSION['username']." 	&#9656;</a>
+          <a href='index.php?page=account' class='link loggedin'>".$_SESSION['username']." </a>
           <a href='index.php?page=cart' class='action--btn link'>Cart</a>";
         }else {
           echo "<a href='index.php?page=login' class='action--btn link'>Get started</a>";
-        }
+        
       ?>
       
     </div>
