@@ -18,7 +18,7 @@
           <a href='index.php?page=cart' class='action--btn link'>Cart</a>";
         }else {
           echo "<a href='index.php?page=login' class='action--btn link'>Get started</a>";
-        
+        }
       ?>
       
     </div>
